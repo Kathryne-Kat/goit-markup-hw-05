@@ -160,6 +160,7 @@ address {
 }
 .icon {
   vertical-align: middle;
+  margin-right: 10px;
   fill: currentColor;
 }
 .contacts .link:hover,
@@ -563,10 +564,13 @@ address {
   overflow: auto;
 }
 
-.element-portfolio:hover .text-position-portfolio,
+.element-portfolio:hover .text-position-portfolio {
+  transform: translateY(0);
+}
 .element-portfolio:focus .text-position-portfolio {
   transform: translateY(0);
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -581,6 +585,7 @@ address {
 }
 .element-portfolio-item:hover,
 .element-portfolio-item:focus {
+  transform: translateY(0);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow var(--time) var(--cubic);
